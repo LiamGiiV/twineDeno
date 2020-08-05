@@ -1,0 +1,234 @@
+/** Add any CSS you need to this file. */
+
+@import url(//db.onlinewebfonts.com/c/3bf7501ddcf8338bc9cdcedad10914cb?family=Aller);
+@import url(//db.onlinewebfonts.com/c/5c803199923a6ed48112bebbb486b3e0?family=Lora);
+
+#inquires {
+  font-family: 'Aller', sans-serif;
+}
+
+h1,
+h2 {
+  font-family: 'Aller', sans-serif;
+  font-weight: bold;
+}
+
+h3,
+h4,
+p {
+  font-family: 'Lora', sans-serif;
+}
+
+html {
+  background: url(../img/white_to_grey.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#logo img {
+  width: 140px;
+  padding-left: 5px;
+  padding-top: 5px;
+  float: left;
+}
+
+/*Header*/
+.header {
+  overflow: auto;
+  background-color: #ffffff7b;
+  max-width: 100%;
+  display: flex;
+  font-family: 'Aller', sans-serif;
+  border-radius: 20px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding-right: 8px;
+  padding-left: 8px;
+  text-decoration: none;
+  font-size: 25px;
+  border-radius: 8px;
+  float: left;
+}
+
+.header a:hover {
+  background-color: #f9f9f9ee;
+  color: black;
+}
+
+.header a.active-button {
+  border-top-right-radius: 25px;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border: 1px;
+  border-top: solid;
+  border-right: solid;
+  border-left: solid;
+  background-color: #fefbd299;
+}
+
+.header-buttons {
+  padding-top: 8px;
+  float: right;
+}
+
+.header #coda {
+  width: 30px;
+  display: flex;
+  border-radius: 8px;
+  float: right;
+}
+
+/*Footer*/
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 70%;
+  background: url(../img/bg_texture.webp) no-repeat center center fixed;
+  color: black;
+  text-align: center;
+  max-width: 800px;
+  border-top-right-radius: 25px;
+}
+
+.footer p {
+  text-align: right;
+  padding-right: 40px;
+  font-family: 'Aller', sans-serif;
+}
+
+#subtitle p {
+  font-family: 'Lora', sans-serif;
+  font-size: medium;
+  padding-left: 5%;
+  margin-top: 0.5em;
+}
+
+/* Store columns*/
+#three_columns {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  max-width: 1600px;
+}
+
+#three_columns h1 {
+  font-size: 1.7em;
+  text-align: center;
+  margin: 0em;
+}
+
+.lower_nav {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 60px;
+}
+
+.lower_nav {
+  width: 900px;
+}
+.lower_nav table {
+  background-color: #bbbbbbff;
+  border-style: solid;
+  border-color: #bbbbbbff;
+  padding: 4px;
+  padding-bottom: -35px;
+}
+
+#c1,
+#c2 {
+  width: 40%;
+  background-color: #eeeeeeff;
+  border-style: solid;
+  border-color: #eeeeeeff;
+}
+
+#sidebar_right {
+  background-color: #00000000;
+  width: 20%;
+  min-width: 145px;
+  max-width: 165px;
+}
+
+.flex-item {
+  padding: 10px;
+  border-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.item_title {
+  font-family: 'Aller';
+  font-size: 1.2em;
+}
+
+.item_description {
+  font-family: 'Lora';
+  font-size: 0.9em;
+}
+
+.item_image {
+  width: 100%;
+  height: auto;
+}
+
+.item_frame {
+  background-color: #ffffff22;
+  border-style: solid;
+  border-color: lightgray;
+  border-bottom-color: #00000000;
+  margin-bottom: -1px;
+}
+
+.item_frame:hover {
+  background-color: #ffffffaa;
+}
+
+.item_frame img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-top: 1.7em;
+  margin-bottom: 1em;
+  box-shadow: 4px 7px #888888;
+}
+
+.item_frame h2 {
+  padding-left: 0.5em;
+  margin: 0em;
+}
+
+.item_frame h4 {
+  padding-left: 0.5em;
+  margin-top: 0.5em;
+  margin-left: 1em;
+  margin-bottom: 0.3em;
+}
+
+.item_frame p {
+  margin: 0em;
+  padding-left: 2em;
+  padding-right: 1em;
+  padding-bottom: 1em;
+}
+
+input {
+  border-radius: 10px;
+  margin-top: 4px;
+  font-family: 'Lora', sans-serif;
+}
+
+#data {
+  border-style: groove;
+  border-radius: 15px;
+  padding: 4px;
+  max-width: 600px;
+}
