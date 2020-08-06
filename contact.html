@@ -20,12 +20,12 @@
       </div>
     </div>
     <p>For all inquiries please complete the form below.</p>
-    <form id="data" action="https://httpbin.org/post" method="post" name="inquiry">
+    <form name="inquiry" id="data" action="https://httpbin.org/post" method="post" target="blank">
       <label for="first_name">Your Name:</label>
       <input
         id="first_name"
         type="text"
-        name="first-name"
+        name="first_name"
         size="25"
         maxlength="50"
         placeholder="First Name"
@@ -35,7 +35,7 @@
         id="last_name"
         type="text"
         required
-        name="last-name"
+        name="last_name"
         size="25"
         maxlength="50"
         placeholder="Last Name"
@@ -49,13 +49,14 @@
         size="25"
         maxlength="50"
         placeholder="Email Address"
+        required
       />
       <br />
-      <label for="address">Your Mailing Address:</label>
+      <label for="street_address">Your Mailing Address:</label>
       <input
-        id="address"
+        id="street_address"
         type="text"
-        name="address"
+        name="street_address"
         size="25"
         maxlength="50"
         required
@@ -87,7 +88,7 @@
       <label for="phone_option">Would You Like to Be Phoned?</label>
       <input id="phone_option" type="checkbox" />
       <br />
-      <label for="first_name">Your Phone Number:</label>
+      <label for="phone">Your Phone Number:</label>
       <input
         id="phone"
         type="tel"
@@ -101,14 +102,7 @@
       <label for="phone_option"></label>
 
       <p>Type of Inquiry</p>
-      <input
-        type="radio"
-        id="question"
-        name="inquiry"
-        value="question"
-        onclick="inquiry_click()"
-        checked
-      />
+      <input type="radio" id="question" name="inquiry" value="question" onclick="inquiry_click()" />
       <label for="question">Question</label>
       <input type="radio" id="comment" name="inquiry" value="comment" onclick="inquiry_click()" />
       <label for="comment">Comment</label>
@@ -116,12 +110,12 @@
       <label for="order">Order Problem</label>
       <br />
       <div id="order_textbox"></div>
-      <textarea id="text_block" name="text_block" rows="6" cols="40">
+      <textarea id="text_block" name="text_block" rows="6" cols="40" required>
 Type your message here...</textarea
       >
 
       <br />
-      <input type="submit" value="Submit" name="submit" />
+      <input type="submit" id="submit_button" value="Submit" name="submit" />
       <input value="Liam Gallagher" name="author" type="hidden" />
     </form>
     <div class="lower_nav"></div>

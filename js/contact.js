@@ -4,8 +4,85 @@ window.onload = function() {
   lower_nav();
   click_check();
   city_list();
+  form_submission();
+  document.querySelector('#phone_option').onclick = function() {
+    if (this.checked) {
+      console.log('inside phone_option');
+      // add requirement
+      document.querySelector('#phone').required = true;
+    } else {
+      document.querySelector('#phone').required = false;
+    }
+  };
 };
 
+function form_submission() {
+  console.log('inside form_submission()');
+  var submit_button = document.querySelector('#submit_button');
+  submit_button.onclick = function() {
+    console.log('inside form_validation()');
+    var form = document.querySelector('#data');
+    // validate first name
+    let first_name = form.first_name.value;
+    if (first_name === '') {
+      // eslint-disable-next-line no-alert
+      alert('Please enter your first name.');
+      first_name.focus();
+    }
+    // validate last name
+    let last_name = form.last_name.value;
+    if (last_name === '') {
+      // eslint-disable-next-line no-alert
+      alert('Please enter your last name.');
+      last_name.focus();
+    }
+    // Can't get this right. Is there something special about the email input type?
+    // // validate email
+    // let email = form.email.value;
+    // if (email === '') {
+    //   // eslint-disable-next-line no-alert
+    //   alert('Please enter your email address.');
+    //   email.focus();
+    // }
+
+    // validate street address
+    let street_address = form.street_address.value;
+    if (street_address === '') {
+      // eslint-disable-next-line no-alert
+      alert('Please enter your street address.');
+      street_address.focus();
+    }
+
+    // validate city
+    let city = form.city.value;
+    if (city === '') {
+      // eslint-disable-next-line no-alert
+      alert('Please enter your city.');
+      city.focus();
+    }
+
+    // validate postal code
+    let postal_code = form.postal_code.value;
+    if (postal_code === '') {
+      // eslint-disable-next-line no-alert
+      alert(
+        'Please enter your postal code (A1A-1A1). Postal codes cannot start with the following letters: I, O, U, W, or Z.'
+      );
+      postal_code.focus();
+    }
+    // validate phone
+    let phone = form.phone.value;
+    if (document.querySelector('#phone').required === true && phone === '') {
+      // eslint-disable-next-line no-alert
+      alert(
+        'Please enter your phone number. Only North American Phone numbers accepted. For voice suppourt outside of North America please put "Voice Support" in the first line of your message.'
+      );
+      phone.focus();
+    }
+  };
+}
+
+// add logo to page
 function index_logo() {
   let div = document.querySelector('#logo');
   let img = document.createElement('img');
@@ -107,6 +184,7 @@ function problem_click() {
       text_input.setAttribute('placeholder', 'Order Number');
       text_input.setAttribute('id', 'order_number');
       text_input.setAttribute('name', 'order_number');
+      text_input.setAttribute('required', '');
       div.appendChild(label);
       div.appendChild(text_input);
     }
@@ -127,13 +205,16 @@ var canadian_cities = [
   'Edmonton',
   'Fredricton',
   'Halifax',
+  'Hamilton',
   'Montréal',
   'Ottawa',
+  'Pallet Town',
   'Québec City',
   'Regina',
   'St.John',
   'St.Johns',
   'Toronto',
   'Vancouver',
-  'Winnepeg'
+  'Winnepeg',
+  'Yellowknife'
 ];

@@ -128,14 +128,13 @@ html {
 .lower_nav {
   display: flex;
   flex-direction: row;
+  padding-left: 0em;
   margin-bottom: 60px;
-}
-
-.lower_nav {
   width: 900px;
 }
+
 .lower_nav table {
-  background-color: #bbbbbbff;
+  background-color: #ffffffaa;
   border-style: solid;
   border-color: #bbbbbbff;
   padding: 4px;
@@ -145,7 +144,7 @@ html {
 #c1,
 #c2 {
   width: 40%;
-  background-color: #eeeeeeff;
+  background-color: #ffffff22;
   border-style: solid;
   border-color: #eeeeeeff;
 }
@@ -174,21 +173,19 @@ html {
   font-size: 0.9em;
 }
 
-.item_image {
-  width: 100%;
-  height: auto;
-}
-
 .item_frame {
-  background-color: #ffffff22;
+  background-color: #ffffff11;
   border-style: solid;
   border-color: lightgray;
   border-bottom-color: #00000000;
   margin-bottom: -1px;
+  transition: transform 0.2s;
 }
 
 .item_frame:hover {
-  background-color: #ffffffaa;
+  background-color: #ffffffff;
+  box-shadow: 7px 7px #88888855;
+  transform: scale(1.1);
 }
 
 .item_frame img {
@@ -227,8 +224,7 @@ input {
 }
 
 #data {
-  border-style: groove;
-  border-radius: 15px;
   padding: 4px;
   max-width: 600px;
+  border-color: #ffffff;
 }
