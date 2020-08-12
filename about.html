@@ -17,11 +17,53 @@
         <a href="index.html">Home</a>
         <a href="contact.html">Inquires</a>
         <a class="active-button" id="coda" href="about.html"
-          ><img src="../src/img/coda.png" alt="coda"
+          ><img src="img/coda.png" alt="coda"
         /></a>
       </div>
     </div>
-    <p>
+    <h1>Reflection</h1>
+    <h2>Researching Hosting</h2>
+    <div id="reflection">
+      <p class="subhead">
+        Researching hosting solutions was a breeze! In my previous career as a musician I had a
+        number of terrible artist websites through services like wordpress and bloggerbut making use
+        of GitHub’s Git Pages was really easy. Publishing my website was a matter of four command
+        lines. One of the benefits of using GitHub was an increased familiarity with the platform
+        where so much software development is taking place. Increasing fluency with such a popular
+        from of version control is a good use of time. For throughness I did review the other
+        services detailed in the assignment but they didn’t suit my needs; but Vercel uses react,
+        Netlify allows integration with GitLab (a plus) but I didn’t want to create a new account,
+        and I try to stay clear of Google products because of the damage they’ve done to the arts so
+        FireBase was off the list.
+      </p>
+      <h2>Testing and Validation</h2>
+      <p>
+        To validate user entry in forms I relied on the required and the pattern attributes. Regexes
+        are a powerful tool made for exactly for this sort of use case. When combined with some
+        logic in JavaScript to produce reminders for the user about which fields to fill...<br />
+        eg.
+        <code>if (input_value === “”) {alert(“Please input your name =^) ”};)</code> you can be
+        (reasonably) sure the user knows how to satisfy the requirements of the form.
+      </p>
+      <p>
+        To test my forms I did some research on the characteristics of the fields rather than trust
+        my assumptions. I learned that postal codes cannot start with certain letters, and that the
+        pattern attribute can be combined with JavaScript to protect the form inputs. Additionally,
+        I tested my forms by telling my friend that I would buy them a beer if they could get a bad
+        entry through after throughly testing them myself. I was confident that the form validation
+        was secure as the regex expressions I used were very thorough, and having a beer on the line
+        motivated me to check and double check all my inputs and attributes.
+      </p>
+      <p>
+        My advice to other beginner web developers is to not build their websites from scratch like
+        I did. Though I learned a lot from this process, ultimately I think this is like building a
+        C program without using stdlib. This would be something good to do as a test to hone your
+        skills but not to actually produce a finished website. Set up your template, go learn some
+        cool tricks on a test website you built from scratch, and then apply what you learned to
+        your template.
+      </p>
+    </div>
+    <p id="last_element">
       This webpage was made by Liam Gallagher in July of 2020 for Seneca College's Web222 class.
       <br />
       Liam Gallagher is the copyright holder for all images and works represented herein, unless
