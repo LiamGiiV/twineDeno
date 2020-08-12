@@ -1,7 +1,7 @@
 /** Add any CSS you need to this file. */
 
 @import url('https://fonts.googleapis.com/css2?family=Allerta&display=swap');
-@import url(https://db.onlinewebfonts.com/c/5c803199923a6ed48112bebbb486b3e0?family=Lora);
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 
 #inquires {
   font-family: 'Allerta', sans-serif;
@@ -227,4 +227,17 @@ input {
   padding: 4px;
   max-width: 600px;
   border-color: #ffffff;
+}
+
+#reflection {
+  max-width: 35em;
+}
+
+#reflection p::first-letter {
+  font-size: 200%;
+  font-style: oblique;
+}
+
+#last_element {
+  margin-bottom: 5em;
 }

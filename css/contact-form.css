@@ -1,9 +1,9 @@
-body{
-  background-image: url("../img/IMG_0118.JPG");
+body {
+  background-image: url('../img/IMG_0118.JPG');
 }
 
 #fcf-form {
-  display:block;
+  display: block;
 }
 
 .form-container {
@@ -16,7 +16,7 @@ body{
   text-align: left;
   padding: 30px;
   padding-bottom: 10px;
-  border: 1px solid #82B869;
+  border: 1px solid #82b869;
   border-radius: 0.25rem;
   max-width: 80%;
 }
@@ -56,7 +56,8 @@ body{
   border: 1px solid green;
 }
 
-select.form-control[size], select.form-control[multiple] {
+select.form-control[size],
+select.form-control[multiple] {
   height: auto;
 }
 
@@ -87,18 +88,19 @@ label.fcf-label {
   font-size: 1rem;
   line-height: 1.5;
   border-radius: 0.25rem;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 @media (prefers-reduced-motion: reduce) {
   .fcf-btn {
-      transition: none;
+    transition: none;
   }
 }
 
 .fcf-btn-primary {
   color: #fff;
-  background-color: #82B869;
+  background-color: #82b869;
   border-color: green;
 }
 
@@ -108,14 +110,16 @@ label.fcf-label {
   border-color: green;
 }
 
-.fcf-btn-primary:focus, .fcf-btn-primary.focus {
+.fcf-btn-primary:focus,
+.fcf-btn-primary.focus {
   color: #fff;
   background-color: #0069d9;
   border-color: #0062cc;
   box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
 }
 
-.fcf-btn-lg, .fcf-btn-group-lg>.fcf-btn {
+.fcf-btn-lg,
+.fcf-btn-group-lg > .fcf-btn {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   line-height: 1.5;
